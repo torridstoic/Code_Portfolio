@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{b4343a57-516d-4503-b2f5-e708dbea0521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ec02f61b-27d0-43d3-9d4e-849b1c056385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{10e3915d-6a6b-4324-8552-68d5f1090af4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PathPlannerLab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PathPlannerUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\goal.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\open.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\pause.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\play.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\play_end.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\play_pause.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\small.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\start.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource\stop.ico">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource\PathPlanner.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PathPlannerLab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

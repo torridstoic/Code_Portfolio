@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 14.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PathPlannerApp", "PathPlannerApp\PathPlannerApp.vcxproj", "{FE0F9398-AFA2-4DA6-8695-F45E9FC97A08}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PathSearch", "PathSearch\PathSearch.vcxproj", "{5CCFE9C7-BD17-420C-A209-49C96693F607}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TileSystem", "TileSystem\TileSystem.vcxproj", "{F0E86FBE-5AEF-4467-A073-6E0B8A4703E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0F9398-AFA2-4DA6-8695-F45E9FC97A08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE0F9398-AFA2-4DA6-8695-F45E9FC97A08}.Debug|Win32.Build.0 = Debug|Win32
+		{FE0F9398-AFA2-4DA6-8695-F45E9FC97A08}.Release|Win32.ActiveCfg = Release|Win32
+		{FE0F9398-AFA2-4DA6-8695-F45E9FC97A08}.Release|Win32.Build.0 = Release|Win32
+		{5CCFE9C7-BD17-420C-A209-49C96693F607}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CCFE9C7-BD17-420C-A209-49C96693F607}.Debug|Win32.Build.0 = Debug|Win32
+		{5CCFE9C7-BD17-420C-A209-49C96693F607}.Release|Win32.ActiveCfg = Release|Win32
+		{5CCFE9C7-BD17-420C-A209-49C96693F607}.Release|Win32.Build.0 = Release|Win32
+		{F0E86FBE-5AEF-4467-A073-6E0B8A4703E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0E86FBE-5AEF-4467-A073-6E0B8A4703E7}.Debug|Win32.Build.0 = Debug|Win32
+		{F0E86FBE-5AEF-4467-A073-6E0B8A4703E7}.Release|Win32.ActiveCfg = Release|Win32
+		{F0E86FBE-5AEF-4467-A073-6E0B8A4703E7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
