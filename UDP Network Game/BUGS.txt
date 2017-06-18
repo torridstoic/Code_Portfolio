@@ -1,0 +1,2 @@
+1) If you start and stop a 3rd running client, the two other clients will crash.
+2) If you close the server the client window for player two does not close in all instances.
