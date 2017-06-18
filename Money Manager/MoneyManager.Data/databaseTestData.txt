@@ -1,0 +1,16 @@
+﻿INSERT INTO WalletTypes (Type) VALUES ('Entertainment');
+INSERT INTO WalletTypes (Type) VALUES ('Groceries');
+INSERT INTO WalletTypes (Type) VALUES ('Electric');
+INSERT INTO WalletTypes (Type) VALUES ('Utilities');
+INSERT INTO Stores (Name) VALUES ('Walmart');
+INSERT INTO Stores (Name) VALUES ('Steam');
+INSERT INTO Stores (Name) VALUES ('Publix');
+INSERT INTO Stores (Name) VALUES ('GameStop');
+INSERT INTO Stores (Name) VALUES ('Full Sail');
+
+INSERT INTO Users (FirstName, LastName, Email, Password) VALUES ('Test', 'Test', 'Test@Test.Test', 'test');
+INSERT INTO Wallets (UserId, WalletTypeId, Name, BudgetTotal) VALUES ((SELECT Id FROM Users WHERE FirstName = 'Test'), (SELECT Id FROM WalletTypes WHERE Type = 'Rent'), 'Test Wallet', 18000);
+INSERT INTO Transactions (WalletId, StoreId, Amount, Notes) VALUES ((SELECT Id FROM Wallets LIMIT 1), (SELECT Id FROM Stores WHERE Name = 'Publix'), 55.25, 'This is a note for the transaction');
+INSERT INTO Transactions (WalletId, StoreId, Amount, Notes) VALUES ((SELECT Id FROM Wallets LIMIT 1), (SELECT Id FROM Stores WHERE Name = 'Walmart'), 22.25, 'This is a note for the transaction');
+INSERT INTO Transactions (WalletId, StoreId, Amount, Notes) VALUES ((SELECT Id FROM Wallets LIMIT 1), (SELECT Id FROM Stores WHERE Name = 'GameStop'), 44.25, 'This is a note for the transaction');
+INSERT INTO Transactions (WalletId, StoreId, Amount, Notes) VALUES ((SELECT Id FROM Wallets LIMIT 1), (SELECT Id FROM Stores WHERE Name = 'Steam'),  11.25, 'This is a note for the transaction');
