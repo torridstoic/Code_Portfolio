@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotBackground_small">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/item_itemIcon" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Type: (type)"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_itemType" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Rarity: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="(rarity)"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/item_itemRarity" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="Item Description"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_itemDesc" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/item_watchCheck"
+                android:text="Watch List"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Top Sell Price:"
+                android:padding="3dp" />
+            <TextView
+                android:text="Top Buy Order:"
+                android:padding="3dp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="(price)"
+                android:padding="3dp"
+                android:id="@+id/item_sellsText" />
+            <TextView
+                android:text="(price)"
+                android:padding="3dp"
+                android:id="@+id/item_buysText" />
+        </TableRow>
+        <TableRow>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:text="Display Sell Listings"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_radioSells" />
+                <RadioButton
+                    android:text="Display Buy Listings"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_radioBuys" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_listingList" />
+</LinearLayout>

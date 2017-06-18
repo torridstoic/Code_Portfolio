@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:text="Trading Post Search"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <Button
+    android:text="Your Watch List"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/searchFrag_watchButton" />
+  <TextView
+      android:text="Find an item:"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/searchFrag_searchField" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/searchFrag_clearButton" />
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/searchFrag_searchButton" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Trading_Sidekick.Trading_Sidekick" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="21" />
+	<application android:label="Trading_Sidekick" android:theme="@style/GW2HoTTheme"></application>
+</manifest>
