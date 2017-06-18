@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Edit Budget"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_budget_title" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Start Date:"
+                android:padding="3dip" />
+            <DatePicker
+                android:id="@+id/budget_start_picker" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="End Date:"
+                android:padding="3dip" />
+            <DatePicker
+                android:id="@+id/budget_end_picker" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Wallet:"
+                android:padding="3dip" />
+            <Spinner
+                android:id="@+id/edit_budget_spinner" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Amount:"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_budget_cancel" />
+        <Button
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_budget_ok" />
+    </LinearLayout>
+</LinearLayout>

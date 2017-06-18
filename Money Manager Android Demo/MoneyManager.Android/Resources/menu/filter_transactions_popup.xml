@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:title="Reset All"
+    android:id="@+id/filter_trans_reset" />
+  <item
+    android:title="Wallets"
+    android:id="@+id/filter_trans_wallets" />
+  <item
+    android:title="Stores"
+    android:id="@+id/filter_trans_stores" />
+  <item
+    android:title="Dates"
+    android:id="@+id/filter_trans_dates" />
+  <item
+    android:title="Amounts"
+    android:id="@+id/filter_trans_amounts" />
+</menu>

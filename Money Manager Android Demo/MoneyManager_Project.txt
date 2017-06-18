@@ -1,0 +1,19 @@
+Money Manager
+	- Vision
+		- To allow users to budget money with multiple "wallets", track spending, 
+		and show reports based on spending
+	- Core 
+		- Wallets
+		- Transactions
+		- Database
+			- SQLite
+				- Selected as it is more flexable for our design and use. 
+					Might more to a server database later. Should work amazingly for Android
+			- MSSQL
+			- MySQL
+	- Features
+		- Reports
+		- Tracking
+		- User Added Transactions
+		- Geolocation tracking for warnings
+		- Auto transaction from recipt image (WAY later)

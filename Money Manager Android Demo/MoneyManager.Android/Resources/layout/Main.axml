@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content"
+        android:layout_below="@id/toolbar">
+        <Button
+            android:id="@+id/main_wallets_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wallets" />
+        <Button
+            android:text="Transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_transactions_button" />
+        <Button
+            android:text="Recurring Transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_rectransactions_button" />
+        <Button
+            android:text="Manage Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_manage_acct_button" />
+        <Button
+            android:text="Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_logout_button" />
+    </LinearLayout>
+</RelativeLayout>
